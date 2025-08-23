@@ -1,92 +1,1314 @@
 [
     {
-        "positionx": 0,
-        "positiony": 0,
-        "content": "Top-left: Wrecked Dinghy. Event: You find a splintered boat and a sodden scrap bearing an X. A crab guards a small pouch of coins. Adjacent hints: East (1,0) Palm Grove whispers; South (0,1) Tide Pools glimmer; West/North are open sea cliffs.",
-        "choices": [
-            "Take the pouch and leave quietly",
-            "Chase the crab for more clues",
-            "Search under the dinghy for hidden stash"
+        "level": 1,
+        "nodes": [
+            {
+                "name": "L1-Anchor Cove",
+                "positionx": 0,
+                "positiony": 0,
+                "content": "You land at a quiet cove. Driftwood and a torn flag lie around.",
+                "choices": [
+                    {
+                        "content": "Search the flag for clues.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Flag Patch",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": ""
+                    },
+                    {
+                        "content": "Practice swings with driftwood.",
+                        "monster": {
+                            "name": "Crabby Nipper",
+                            "health": 4,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Quick Drills",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "brew seaweed tea to recover.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Seaweed Brew",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Barnacle Pier",
+                "positionx": 1,
+                "positiony": 0,
+                "content": "A rickety pier creaks. Something scuttles below.",
+                "choices": [
+                    {
+                        "content": "Peek under the boards.",
+                        "monster": {
+                            "name": "Pier Rat",
+                            "health": 5,
+                            "attack": 2,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Rat Tooth Charm",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Tighten your boots.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Strapped Boots",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Fish for snacks.",
+                        "monster": {
+                            "name": "Gulper Fish",
+                            "health": 3,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Fresh Catch",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Coral Lookout",
+                "positionx": 2,
+                "positiony": 0,
+                "content": "A colorful reef juts out, waves crash loudly.",
+                "choices": [
+                    {
+                        "content": "Signal with a mirror.",
+                        "monster": {
+                            "name": "Greedy Gull",
+                            "health": 4,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Gleam Focus",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Gather coral shards.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Coral Guard",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Rest on warm rock.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Sun-warmed Rest",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Tidepool Alley",
+                "positionx": 0,
+                "positiony": 1,
+                "content": "Shallow pools hide trinkets and crabs.",
+                "choices": [
+                    {
+                        "content": "Sift the sand.",
+                        "monster": {
+                            "name": "Nipping Crab",
+                            "health": 4,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Sand Sifter",
+                            "health": 1,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Practice footwork on rocks.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Balanced Stance",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Snack on shellfish.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Salty Bite",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Smuggler Path",
+                "positionx": 1,
+                "positiony": 1,
+                "content": "Hidden footprints lead between dunes.",
+                "choices": [
+                    {
+                        "content": "Follow the tracks.",
+                        "monster": {
+                            "name": "Sneak Thug",
+                            "health": 6,
+                            "attack": 2,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Dagger Find",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Set a small trap.",
+                        "monster": {
+                            "name": "Trap-Scar Crab",
+                            "health": 5,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Sturdy Twine",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Scout and rest.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Quiet Watch",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Rum Shack Ruin",
+                "positionx": 2,
+                "positiony": 1,
+                "content": "A collapsed shack smells of old rum.",
+                "choices": [
+                    {
+                        "content": "Check the cellar hatch.",
+                        "monster": {
+                            "name": "Cellar Bat",
+                            "health": 3,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Corked Tonic",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Sharpen a shard into a shiv.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Makeshift Shiv",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Brace door with a beam.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Wooden Brace",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Seaglass Dunes",
+                "positionx": 0,
+                "positiony": 2,
+                "content": "Wind sweeps glittering glass across the sand.",
+                "choices": [
+                    {
+                        "content": "Collect a bright shard.",
+                        "monster": {
+                            "name": "Sand Sprite",
+                            "health": 5,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Seaglass Edge",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Build a windbreak.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Windbreak Cover",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Nap behind a dune.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Short Nap",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Wreck of the Minnow",
+                "positionx": 1,
+                "positiony": 2,
+                "content": "A small wreck tilts, ropes and spars tangled.",
+                "choices": [
+                    {
+                        "content": "Search the hold.",
+                        "monster": {
+                            "name": "Hull Slime",
+                            "health": 6,
+                            "attack": 2,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Sturdy Rope",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Claim a captain’s pin.",
+                        "monster": {
+                            "name": "Pin Thief",
+                            "health": 5,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Captain’s Pin",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Patch wounds with sailcloth.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Sailcloth Wrap",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L1-Captain Brine",
+                "positionx": 2,
+                "positiony": 2,
+                "content": "A grizzled pirate captain blocks the way, cutlass ready.",
+                "choices": [
+                    {
+                        "content": "Challenge Brine to a duel.",
+                        "monster": {
+                            "name": "Captain Brine",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Brine’s Lesson",
+                            "health": 2,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": "next"
+                    },
+                    {
+                        "content": "Ambush with sand in eyes.",
+                        "monster": {
+                            "name": "Captain Brine",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Dirty Trick",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "consequence": "next"
+                    },
+                    {
+                        "content": "Hold firm and counter.",
+                        "monster": {
+                            "name": "Captain Brine",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Counter Guard",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 2
+                        },
+                        "consequence": "next"
+                    }
+                ]
+            }
         ]
     },
     {
-        "positionx": 1,
-        "positiony": 0,
-        "content": "Top-center: Palm Grove. Event: A parrot squawks a riddle about a buried key. Coconuts hang low; one looks carved. Adjacent hints: West (0,0) Wrecked Dinghy; East (2,0) Cliff Ledge; South (1,1) Jungle Camp; North is roaring surf.",
-        "choices": [
-            "Answer the parrot’s riddle",
-            "Crack open the carved coconut",
-            "Climb a palm to scout"
+        "level": 2,
+        "nodes": [
+            {
+                "name": "L2-Mist Channel",
+                "positionx": 0,
+                "positiony": 0,
+                "content": "Fog hugs narrow waters between rocks.",
+                "choices": [
+                    {
+                        "content": "Feel your way with a pole.",
+                        "monster": {
+                            "name": "Reef Eel",
+                            "health": 7,
+                            "attack": 2,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Pole Reach",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Set a marker buoy.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Buoy Plan",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Sip warm grog.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Warm Grog",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Bosun Bridge",
+                "positionx": 1,
+                "positiony": 0,
+                "content": "A rope bridge sways over spray.",
+                "choices": [
+                    {
+                        "content": "Cross fast.",
+                        "monster": {
+                            "name": "Bridge Macaw",
+                            "health": 8,
+                            "attack": 3,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Swift Stride",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Reinforce knots.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Tight Knots",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Rest mid-span and breathe.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Steady Nerves",
+                            "health": 2,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Cannon Cliff",
+                "positionx": 2,
+                "positiony": 0,
+                "content": "Old cannons point to sea, rusted but imposing.",
+                "choices": [
+                    {
+                        "content": "Scrap for a brace.",
+                        "monster": {
+                            "name": "Rust Imp",
+                            "health": 7,
+                            "attack": 2,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Iron Brace",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Test-fire a small shot.",
+                        "monster": {
+                            "name": "Boom Sprite",
+                            "health": 6,
+                            "attack": 3,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Boom Timing",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Hide and breathe easy.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Calm Shelter",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Siren Lagoon",
+                "positionx": 0,
+                "positiony": 1,
+                "content": "Sweet singing drifts over still water.",
+                "choices": [
+                    {
+                        "content": "Sing back boldly.",
+                        "monster": {
+                            "name": "Lagoon Siren",
+                            "health": 9,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Bold Voice",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Plug ears with wax.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Wax Plugs",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Drink from clear spring.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Fresh Spring",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Galley Wreck",
+                "positionx": 1,
+                "positiony": 1,
+                "content": "A larger wreck with scorched galley pots.",
+                "choices": [
+                    {
+                        "content": "Open a sealed crate.",
+                        "monster": {
+                            "name": "Crate Crawler",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Fine Rations",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Forge a better blade from scrap.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Scrap Cutlass",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Hammer a pot helm.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Pot Helm",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Chartroom Cave",
+                "positionx": 2,
+                "positiony": 1,
+                "content": "A cave wall etched with routes and riddles.",
+                "choices": [
+                    {
+                        "content": "Solve a riddle.",
+                        "monster": {
+                            "name": "Puzzle Crab",
+                            "health": 8,
+                            "attack": 2,
+                            "defense": 2
+                        },
+                        "reward": {
+                            "name": "Insight Map",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Trace safe paths.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Safe Route",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Camp under markings.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Marked Rest",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Whale Road",
+                "positionx": 0,
+                "positiony": 2,
+                "content": "Deep grooves show where whales passed.",
+                "choices": [
+                    {
+                        "content": "March in the groove.",
+                        "monster": {
+                            "name": "Barnacle Ogre",
+                            "health": 11,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Groove Rhythm",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Shell up armor.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Barnacle Plating",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Share dried fruit.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Sweet Bite",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Powder Magazine",
+                "positionx": 1,
+                "positiony": 2,
+                "content": "Kegs of powder, some intact, some split.",
+                "choices": [
+                    {
+                        "content": "Scavenge safely.",
+                        "monster": {
+                            "name": "Spark Gremlin",
+                            "health": 8,
+                            "attack": 3,
+                            "defense": 0
+                        },
+                        "reward": {
+                            "name": "Fuse Kit",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Barricade the door.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Keg Cover",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Warm by lantern.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Lantern Heat",
+                            "health": 3,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L2-Admiral Sable",
+                "positionx": 2,
+                "positiony": 2,
+                "content": "An infamous admiral waits with polished saber.",
+                "choices": [
+                    {
+                        "content": "Salute then strike.",
+                        "monster": {
+                            "name": "Admiral Sable",
+                            "health": 14,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Sable’s Drill",
+                            "health": 2,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": "next"
+                    },
+                    {
+                        "content": "Feint low, cut high.",
+                        "monster": {
+                            "name": "Admiral Sable",
+                            "health": 14,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Clever Feint",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "consequence": "next"
+                    },
+                    {
+                        "content": "Brace and parry.",
+                        "monster": {
+                            "name": "Admiral Sable",
+                            "health": 14,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Parry Plate",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 2
+                        },
+                        "consequence": "next"
+                    }
+                ]
+            }
         ]
     },
     {
-        "positionx": 2,
-        "positiony": 0,
-        "content": "Top-right: Cliff Ledge. Event: A rope bridge sways over jagged rocks. A spyglass rests on a crate marked with a skull. Adjacent hints: West (1,0) Palm Grove; South (2,1) Lookout Fire; East/North drop to waves.",
-        "choices": [
-            "Cross the rope bridge carefully",
-            "Use the spyglass to scan the horizon",
-            "Open the skull-marked crate"
-        ]
-    },
-    {
-        "positionx": 0,
-        "positiony": 1,
-        "content": "Middle-left: Tide Pools. Event: Shimmering pools hide a rusty lockbox tangled in kelp. Tiny eels dart between shells. Adjacent hints: North (0,0) Wrecked Dinghy; East (1,1) Jungle Camp; South (0,2) Smuggler’s Cave; West is slippery rocks.",
-        "choices": [
-            "Free the lockbox from the kelp",
-            "Collect shells to trade later",
-            "Probe deeper pools for secrets"
-        ]
-    },
-    {
-        "positionx": 1,
-        "positiony": 1,
-        "content": "Center: Jungle Camp. Event: Abandoned pirate camp with a dying fire and a note: “Trust the red mark at dusk.” A cooking pot still warm. Adjacent hints: North (1,0) Palm Grove; West (0,1) Tide Pools; East (2,1) Lookout Fire; South (1,2) Buried X.",
-        "choices": [
-            "Search the tents for clues",
-            "Stir the pot to see what’s inside",
-            "Wait for dusk to find the red mark"
-        ]
-    },
-    {
-        "positionx": 2,
-        "positiony": 1,
-        "content": "Middle-right: Lookout Fire. Event: A stacked pile of signal logs and a charred flag. Footprints lead toward the cliffs. Adjacent hints: North (2,0) Cliff Ledge; West (1,1) Jungle Camp; South (2,2) Shipwreck Shore; East is sheer drop.",
-        "choices": [
-            "Light the signal fire",
-            "Follow the footprints to the edge",
-            "Salvage the charred flag for a clue"
-        ]
-    },
-    {
-        "positionx": 0,
-        "positiony": 2,
-        "content": "Bottom-left: Smuggler’s Cave. Event: Echoing cave with hidden niches and a faint lantern glow. A carved skull marks a narrow crawlspace. Adjacent hints: North (0,1) Tide Pools; East (1,2) Buried X; South/West are dark cave walls.",
-        "choices": [
-            "Enter the crawlspace with caution",
-            "Shout to test echoes for hollows",
-            "Follow the lantern glow deeper"
-        ]
-    },
-    {
-        "positionx": 1,
-        "positiony": 2,
-        "content": "Bottom-center: Buried X. Event: A red-marked stone and fresh shovel cuts. Something metallic clinks beneath sand. Adjacent hints: North (1,1) Jungle Camp; West (0,2) Smuggler’s Cave; East (2,2) Shipwreck Shore; South is surf line.",
-        "choices": [
-            "Dig where the X is freshest",
-            "Brush sand gently to reveal metal",
-            "Set a trap in case rivals return"
-        ]
-    },
-    {
-        "positionx": 2,
-        "positiony": 2,
-        "content": "Bottom-right: Shipwreck Shore. Event: A broken galleon lies aground; tide pulls at loose cargo. A locked captain’s chest is wedged under a beam. Adjacent hints: North (2,1) Lookout Fire; West (1,2) Buried X; South/East are foaming breakers.",
-        "choices": [
-            "Pry the captain’s chest free",
-            "Salvage floating cargo quickly",
-            "Signal any ships with a mirror shard"
+        "level": 3,
+        "nodes": [
+            {
+                "name": "L3-Blackwater Gate",
+                "positionx": 0,
+                "positiony": 0,
+                "content": "Dark waters guard the cursed isle.",
+                "choices": [
+                    {
+                        "content": "Probe with a harpoon.",
+                        "monster": {
+                            "name": "Gate Moray",
+                            "health": 9,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Harpoon Grip",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Weave kelp armor.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Kelp Padding",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Drink hardy stew.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Hardy Stew",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Scurvy Orchard",
+                "positionx": 1,
+                "positiony": 0,
+                "content": "A grove of bitter limes fights off scurvy.",
+                "choices": [
+                    {
+                        "content": "Harvest quickly.",
+                        "monster": {
+                            "name": "Lime Sprite",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Citrus Zing",
+                            "health": 2,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Reinforce bracers with bark.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Bark Bracers",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Make lime tonic.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Lime Tonic",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Razor Reefs",
+                "positionx": 2,
+                "positiony": 0,
+                "content": "Jagged reefs slice waves to froth.",
+                "choices": [
+                    {
+                        "content": "Leap across ledges.",
+                        "monster": {
+                            "name": "Reef Cutter",
+                            "health": 11,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Cutter’s Edge",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Bind feet with wraps.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Reef Wraps",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Patch up and rest.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Reef Rest",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Drowned Chapel",
+                "positionx": 0,
+                "positiony": 1,
+                "content": "A sunken shrine hums with old curses.",
+                "choices": [
+                    {
+                        "content": "Break a cursed idol.",
+                        "monster": {
+                            "name": "Idol Wraith",
+                            "health": 12,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Wraith Echo",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Bless your gear with salt.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Salt Blessing",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Kneel and recover.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Quiet Prayer",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Mutineer Camp",
+                "positionx": 1,
+                "positiony": 1,
+                "content": "Tents circle a smoky fire, blades within reach.",
+                "choices": [
+                    {
+                        "content": "Challenge the ringleader.",
+                        "monster": {
+                            "name": "Mutineer Chief",
+                            "health": 13,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Chief’s Badge",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Rebuild a shield from planks.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Plank Shield",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Steal stew from the pot.",
+                        "monster": {
+                            "name": "Camp Bruiser",
+                            "health": 10,
+                            "attack": 3,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Hearty Stew",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Deadman’s Grotto",
+                "positionx": 2,
+                "positiony": 1,
+                "content": "Gold glints between skull-studded rocks.",
+                "choices": [
+                    {
+                        "content": "Grab a cursed coin.",
+                        "monster": {
+                            "name": "Greed Ghoul",
+                            "health": 12,
+                            "attack": 4,
+                            "defense": 2
+                        },
+                        "reward": {
+                            "name": "Greed’s Edge",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Use skulls as armor plates.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Skull Plating",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Camp by the entrance.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Safe Camp",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Sunken Gunwale",
+                "positionx": 0,
+                "positiony": 2,
+                "content": "A half-buried hull lists in the surf.",
+                "choices": [
+                    {
+                        "content": "Dive for a chest.",
+                        "monster": {
+                            "name": "Hull Siren",
+                            "health": 11,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Chest Find",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Re-rig a brace.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Hull Brace",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Eat hardtack and rest.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Hardtack Meal",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Harpoon Pier",
+                "positionx": 1,
+                "positiony": 2,
+                "content": "Weathered harpoons line a short pier.",
+                "choices": [
+                    {
+                        "content": "Test a heavy throw.",
+                        "monster": {
+                            "name": "Pier Stalker",
+                            "health": 12,
+                            "attack": 4,
+                            "defense": 1
+                        },
+                        "reward": {
+                            "name": "Heavy Arm",
+                            "health": 0,
+                            "attack": 1,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Bind a chestplate from straps.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Strapped Plate",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 1
+                        },
+                        "consequence": null
+                    },
+                    {
+                        "content": "Warm up and breathe.",
+                        "monster": null,
+                        "reward": {
+                            "name": "Pier Rest",
+                            "health": 4,
+                            "attack": 0,
+                            "defense": 0
+                        },
+                        "consequence": null
+                    }
+                ]
+            },
+            {
+                "name": "L3-Dread Pirate Queen",
+                "positionx": 2,
+                "positiony": 2,
+                "content": "The Dread Pirate Queen stands over the treasure hoard.",
+                "choices": [
+                    {
+                        "content": "Cross blades in honor.",
+                        "monster": {
+                            "name": "Dread Pirate Queen",
+                            "health": 18,
+                            "attack": 5,
+                            "defense": 2
+                        },
+                        "reward": {
+                            "name": "Queen’s Glory",
+                            "health": 3,
+                            "attack": 1,
+                            "defense": 1
+                        },
+                        "consequence": "win"
+                    },
+                    {
+                        "content": "Strike from the shadow of a mast.",
+                        "monster": {
+                            "name": "Dread Pirate Queen",
+                            "health": 18,
+                            "attack": 5,
+                            "defense": 2
+                        },
+                        "reward": {
+                            "name": "Shadow Prize",
+                            "health": 0,
+                            "attack": 2,
+                            "defense": 0
+                        },
+                        "consequence": "win"
+                    },
+                    {
+                        "content": "Brace and weather her storm.",
+                        "monster": {
+                            "name": "Dread Pirate Queen",
+                            "health": 18,
+                            "attack": 5,
+                            "defense": 2
+                        },
+                        "reward": {
+                            "name": "Storm Guard",
+                            "health": 0,
+                            "attack": 0,
+                            "defense": 3
+                        },
+                        "consequence": "win"
+                    }
+                ]
+            }
         ]
     }
 ]

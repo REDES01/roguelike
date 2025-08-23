@@ -34,12 +34,27 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-.button-container{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    width: max-content;
+p {
+  margin-top: 0;
+  font-size: large;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: max-content;
 }
 button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: auto auto;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+.adventure-button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: auto auto;
@@ -54,6 +69,12 @@ button {
   height: 80px;
   overflow: hidden;
 }
+.choice-button {
+  border: 3px solid white;
+  padding: 10px;
+  font-size: large;
+}
+
 button:hover {
   border-color: #646cff;
 }
@@ -61,6 +82,15 @@ button:hover {
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 } */
+
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  width: fit-content;
+  margin: 30px auto;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
