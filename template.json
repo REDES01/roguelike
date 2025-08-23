@@ -1,0 +1,92 @@
+[
+    {
+        "positionx": 0,
+        "positiony": 0,
+        "content": "Top-left: Wrecked Dinghy. Event: You find a splintered boat and a sodden scrap bearing an X. A crab guards a small pouch of coins. Adjacent hints: East (1,0) Palm Grove whispers; South (0,1) Tide Pools glimmer; West/North are open sea cliffs.",
+        "choices": [
+            "Take the pouch and leave quietly",
+            "Chase the crab for more clues",
+            "Search under the dinghy for hidden stash"
+        ]
+    },
+    {
+        "positionx": 1,
+        "positiony": 0,
+        "content": "Top-center: Palm Grove. Event: A parrot squawks a riddle about a buried key. Coconuts hang low; one looks carved. Adjacent hints: West (0,0) Wrecked Dinghy; East (2,0) Cliff Ledge; South (1,1) Jungle Camp; North is roaring surf.",
+        "choices": [
+            "Answer the parrot’s riddle",
+            "Crack open the carved coconut",
+            "Climb a palm to scout"
+        ]
+    },
+    {
+        "positionx": 2,
+        "positiony": 0,
+        "content": "Top-right: Cliff Ledge. Event: A rope bridge sways over jagged rocks. A spyglass rests on a crate marked with a skull. Adjacent hints: West (1,0) Palm Grove; South (2,1) Lookout Fire; East/North drop to waves.",
+        "choices": [
+            "Cross the rope bridge carefully",
+            "Use the spyglass to scan the horizon",
+            "Open the skull-marked crate"
+        ]
+    },
+    {
+        "positionx": 0,
+        "positiony": 1,
+        "content": "Middle-left: Tide Pools. Event: Shimmering pools hide a rusty lockbox tangled in kelp. Tiny eels dart between shells. Adjacent hints: North (0,0) Wrecked Dinghy; East (1,1) Jungle Camp; South (0,2) Smuggler’s Cave; West is slippery rocks.",
+        "choices": [
+            "Free the lockbox from the kelp",
+            "Collect shells to trade later",
+            "Probe deeper pools for secrets"
+        ]
+    },
+    {
+        "positionx": 1,
+        "positiony": 1,
+        "content": "Center: Jungle Camp. Event: Abandoned pirate camp with a dying fire and a note: “Trust the red mark at dusk.” A cooking pot still warm. Adjacent hints: North (1,0) Palm Grove; West (0,1) Tide Pools; East (2,1) Lookout Fire; South (1,2) Buried X.",
+        "choices": [
+            "Search the tents for clues",
+            "Stir the pot to see what’s inside",
+            "Wait for dusk to find the red mark"
+        ]
+    },
+    {
+        "positionx": 2,
+        "positiony": 1,
+        "content": "Middle-right: Lookout Fire. Event: A stacked pile of signal logs and a charred flag. Footprints lead toward the cliffs. Adjacent hints: North (2,0) Cliff Ledge; West (1,1) Jungle Camp; South (2,2) Shipwreck Shore; East is sheer drop.",
+        "choices": [
+            "Light the signal fire",
+            "Follow the footprints to the edge",
+            "Salvage the charred flag for a clue"
+        ]
+    },
+    {
+        "positionx": 0,
+        "positiony": 2,
+        "content": "Bottom-left: Smuggler’s Cave. Event: Echoing cave with hidden niches and a faint lantern glow. A carved skull marks a narrow crawlspace. Adjacent hints: North (0,1) Tide Pools; East (1,2) Buried X; South/West are dark cave walls.",
+        "choices": [
+            "Enter the crawlspace with caution",
+            "Shout to test echoes for hollows",
+            "Follow the lantern glow deeper"
+        ]
+    },
+    {
+        "positionx": 1,
+        "positiony": 2,
+        "content": "Bottom-center: Buried X. Event: A red-marked stone and fresh shovel cuts. Something metallic clinks beneath sand. Adjacent hints: North (1,1) Jungle Camp; West (0,2) Smuggler’s Cave; East (2,2) Shipwreck Shore; South is surf line.",
+        "choices": [
+            "Dig where the X is freshest",
+            "Brush sand gently to reveal metal",
+            "Set a trap in case rivals return"
+        ]
+    },
+    {
+        "positionx": 2,
+        "positiony": 2,
+        "content": "Bottom-right: Shipwreck Shore. Event: A broken galleon lies aground; tide pulls at loose cargo. A locked captain’s chest is wedged under a beam. Adjacent hints: North (2,1) Lookout Fire; West (1,2) Buried X; South/East are foaming breakers.",
+        "choices": [
+            "Pry the captain’s chest free",
+            "Salvage floating cargo quickly",
+            "Signal any ships with a mirror shard"
+        ]
+    }
+]
