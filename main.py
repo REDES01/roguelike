@@ -34,7 +34,7 @@ def main():
             "Player start with 10 health and 1 attack and 0 defense."
             "Try to make the game both not too challenging but not way too easy."
             "There should be a final boss at (2,2) at each level."
-            "At first two levels, the consequence at (2,2) is next."
+            "At first couple of levels, the consequence at (2,2) is next."
             "At the final level, the consequence at (2,2) is win."
             "Other places' consequences should be null"
             "Try to describe everything as simple as possible"
