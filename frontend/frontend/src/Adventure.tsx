@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import data from "../../../template.json";
 
-interface Node {
-  content: string;
-}
 interface Entity {
   name: string;
   health: number;
